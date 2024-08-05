@@ -1,7 +1,7 @@
 export const timeAgo = (input: any) => {
   const date = input instanceof Date ? input : new Date(input);
   const formatter = new Intl.RelativeTimeFormat("en");
-  const ranges = {
+  const ranges: any = {
     years: 3600 * 24 * 365,
     months: 3600 * 24 * 30,
     weeks: 3600 * 24 * 7,
