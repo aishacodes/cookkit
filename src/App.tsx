@@ -1,15 +1,22 @@
+import { useState } from "react";
 import "./App.scss";
 import Card from "./component/Card";
 import ProfileCard from "./component/ProfileCard";
 import timeframes from "./timeframes";
 
 function App() {
+  const [activeTime, setActiveTime] = useState("Daily");
+
   return (
     <main className="wrapper">
-      <ProfileCard />
+      <ProfileCard activeTime={activeTime} setActiveTime={setActiveTime} />
       <div className="cards">
         {timeframes.map((item, itemIndex) => (
-          <Card {...item} key={`${itemIndex}-${item.title}`} />
+          <Card
+            {...item}
+            activeTime={activeTime}
+            key={`${itemIndex}-${item.title}`}
+          />
         ))}
       </div>
     </main>
