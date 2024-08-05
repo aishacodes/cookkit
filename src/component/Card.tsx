@@ -19,16 +19,18 @@ const Card = ({
           <span>{title}</span>
           <img src="/images/menu.svg" alt="" />
         </p>
-        <div className="current">
-          <p>{timeframes[activeTime.toLocaleLowerCase()]?.current} </p>
-          <span>Completed</span>
+        <div className="">
+          <div className="current">
+            <p>{timeframes[activeTime.toLocaleLowerCase()]?.current} </p>
+            <span>Completed</span>
+          </div>
+          <p className="previous">
+            <span>Last week: </span>
+            <span>
+              {timeframes[activeTime.toLocaleLowerCase()]?.previous} completed
+            </span>
+          </p>
         </div>
-        <p className="previous">
-          <span>Last week: </span>
-          <span>
-            {timeframes[activeTime.toLocaleLowerCase()]?.previous} completed
-          </span>
-        </p>
       </div>
     </section>
   );

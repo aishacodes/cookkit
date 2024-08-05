@@ -10,7 +10,7 @@ const ProfileCard = ({
   const timeframe = ["Daily", "Weekly", "Monthly"];
 
   return (
-    <section className="profile-card">
+    <aside className="profile-card">
       <div className="bio">
         <img src="/images/avatar.png" alt="" />
         <div>
@@ -31,7 +31,7 @@ const ProfileCard = ({
           </p>
         ))}
       </div>
-    </section>
+    </aside>
   );
 };
 
