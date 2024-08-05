@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./ProfileCard.scss";
 
 const ProfileCard = ({

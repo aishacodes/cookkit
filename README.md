@@ -18,19 +18,9 @@ This project is a personal ticket-tracking dashboard designed to display user st
    ```sh
    git clone https://github.com/aishacodes/cookkit.git
    cd ticket-tracking-dashboard
-   npm install
-
+   npm install or yarn install
+   npm start or yarn start
    ```
-
-# or
-
-yarn install
-
-npm start
-
-# or
-
-yarn start
 
 ```
 
