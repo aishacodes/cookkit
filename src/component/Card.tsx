@@ -1,4 +1,3 @@
-import { formattedDate, timeAgo } from "../utils";
 import "./Card.scss";
 
 const Card = ({
@@ -10,8 +9,6 @@ const Card = ({
   activeTime: string;
   timeframes: any;
 }) => {
-  const hour = timeAgo(formattedDate);
-
   return (
     <section className="card">
       <div className="top-bg">
@@ -34,7 +31,6 @@ const Card = ({
                 : activeTime == "Weekly"
                 ? "Last Week"
                 : "Last Month"}
-              - {hour}
             </span>
             <span>
               : {timeframes[activeTime.toLocaleLowerCase()]?.previous}
