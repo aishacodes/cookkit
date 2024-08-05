@@ -22,6 +22,8 @@ This project is a personal ticket-tracking dashboard designed to display user st
    npm start or yarn start
    ```
 
+   This will run the app in development mode, and you can view it in the browser at http://localhost:5173.
+
 ```
 
 ```
