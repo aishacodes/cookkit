@@ -13,10 +13,12 @@ const ProfileCard = ({
     <section className="profile-card">
       <div className="bio">
         <img src="/images/avatar.png" alt="" />
-        <p>Report for</p>
-        <h2>Stancey Castilo</h2>
+        <div>
+          <p>Report for</p>
+          <h2>Stancey Castilo</h2>
+        </div>
       </div>
-      <div>
+      <div className="time-frame">
         {timeframe.map((time, timeIndex) => (
           <p
             key={`${timeIndex}-${time}`}

@@ -13,29 +13,60 @@
     border-radius: 50%;
     border: 2px solid white;
     margin-bottom: 1rem;
+
+    @media only screen and (max-width: 376px) {
+      margin-bottom: 0;
+    }
   }
   .bio {
     background-color: v.$blue;
     border-radius: 20px;
     padding: 2rem 1.5rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 376px) {
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+    p {
+      @media only screen and (max-width: 376px) {
+        font-size: 0.75rem;
+      }
+    }
     h2 {
       font-size: 2.5rem;
       font-weight: 300;
       padding: 1.5rem 0 4rem;
+
+      @media only screen and (max-width: 376px) {
+        font-size: 1.25rem;
+        padding: 0;
+      }
     }
   }
-  .time {
-    cursor: pointer;
-    padding: 0.87rem 1.5rem;
-    color: v.$pale-blue;
 
-    &.active {
-      color: white;
+  .time-frame {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 376px) {
+      flex-direction: row;
     }
+    .time {
+      cursor: pointer;
+      padding: 0.87rem 1.5rem;
+      color: v.$pale-blue;
 
-    &:hover {
-      color: v.$soft-blue;
+      &.active {
+        color: white;
+      }
+
+      &:hover {
+        color: v.$soft-blue;
+      }
     }
   }
 }
